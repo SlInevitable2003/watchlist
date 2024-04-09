@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 @app.route('/')
 def hello():
-    return render_template('index.html', name = name, movies = movies)
+    return render_template('index.html', name=name, movies=movies)
 
 @app.route('/user/<name>')
 def user_page(name):
